@@ -22,11 +22,17 @@ This project implements a robust deepfake video detection model that integrates 
 ## 🏗️ Project Structure
 
 ├── main.py # Training and testing pipeline
+
 ├── transformer.py # Legacy transformer components (not final)
+
 ├── swin_transformer.py # Swin Transformer architecture
+
 ├── model_weights.pth # (Optional) Trained weights
+
 ├── Balanced Sample/ # Training data directory
+
 ├── dfdc_train_part_0/ # Testing data directory
+
 └── cached_test_samples/ # Optional test set cache
 
 
