@@ -36,4 +36,38 @@ This project implements a robust deepfake video detection model that integrates 
 └── cached_test_samples/ # Optional test set cache
 
 
+## 📊 Performance
+
+**Final Architecture**: Adjusted ResNet3D50 + Swin Transformer + Temporal Transformer  
+**Epochs**: 20  
+**Batch Size**: 16  
+**Best Metrics:**
+
+| Metric     | Value (%) |
+|------------|-----------|
+| Accuracy   | 69.1      |
+| Precision  | 65.1      |
+| Recall     | 82.7      |
+| F1 Score   | 72.8      |
+| ROC AUC    | 69.2      |
+
+---
+
+## ⚙️ Training Details
+
+- **Optimizer**: AdamW  
+- **Learning Rate**: 5e-5  
+- **Scheduler**: StepLR (gamma=0.5 every 5 epochs)  
+- **Loss Function**: BCEWithLogitsLoss
+
+---
+
+## 📌 Future Work
+
+- Extend to 3D Swin Transformers for full volumetric attention  
+- Integrate adversarial robustness techniques  
+- Explore self-/semi-supervised pretraining  
+- Multimodal detection with audio + video
+
+
 
